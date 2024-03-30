@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="dataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLVerPerfilesController">
+   <children>
+      <Pane prefHeight="463.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="tv_datos" layoutX="66.0" layoutY="68.0" onMouseClicked="#ir_editarPerfil" prefHeight="328.0" prefWidth="510.0">
+              <columns>
+                <TableColumn fx:id="colm_IDPerfil" prefWidth="113.0" text="ID_Perfil" />
+                <TableColumn fx:id="colum_Descripcion" prefWidth="291.0" text="Descripcion" />
+                  <TableColumn fx:id="colum_Estadp" prefWidth="105.0" text="Estado" />
+              </columns>
+            </TableView>
+            <Button fx:id="btn_nuevo" layoutX="296.0" layoutY="424.0" mnemonicParsing="false" onAction="#RegistroPerfil" text="Nuevo" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

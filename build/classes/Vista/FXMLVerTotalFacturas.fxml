@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="dataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLVerTotalFacturasController">
+   <children>
+      <Pane prefHeight="498.0" prefWidth="643.0">
+         <children>
+            <TableView fx:id="tv_datos" layoutX="17.0" layoutY="25.0" onMouseClicked="#ir_VerFactura" prefHeight="411.0" prefWidth="630.0">
+               <columns>
+                  <TableColumn fx:id="idFactura" prefWidth="103.0" text="ID Factura" />
+                  <TableColumn fx:id="codigoFactura" prefWidth="122.0" text="Codigo Factura" />
+                  <TableColumn fx:id="nombreCliente" prefWidth="137.0" text="Nombre Cliente" />
+                  <TableColumn fx:id="fecha" prefWidth="99.0" text="Fecha" />
+                  <TableColumn fx:id="total" prefWidth="108.0" text="Total" />
+                  <TableColumn fx:id="estado" prefWidth="59.0" text="Estado" />
+               </columns>
+            </TableView>
+            <Button fx:id="btn_nuevo" layoutX="304.0" layoutY="450.0" mnemonicParsing="false" onAction="#nuevoRegistro" text="Nuevo" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

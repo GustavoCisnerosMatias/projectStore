@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="dataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLVerUsuariosController">
+   <children>
+      <Pane prefHeight="498.0" prefWidth="643.0">
+         <children>
+            <TableView fx:id="tv_datos" layoutX="61.0" layoutY="29.0" onMouseClicked="#ir_editarUsuario" prefHeight="362.0" prefWidth="521.0">
+              <columns>
+                <TableColumn fx:id="colum_IDUsr" prefWidth="75.0" text="USR_ID" />
+                <TableColumn fx:id="colum_PER_ID" prefWidth="75.0" text="PER_ID" />
+                  <TableColumn fx:id="colum_nombre" prefWidth="118.0" text="Nombre" />
+                  <TableColumn fx:id="colum_Usuario" prefWidth="85.0" text="Usuario" />
+                  <TableColumn fx:id="colum_Clave" prefWidth="85.0" text="Clave" />
+                  <TableColumn fx:id="colum_Estado" prefWidth="82.0" text="Estado" />
+              </columns>
+            </TableView>
+            <Button fx:id="btn_nuevo" layoutX="296.0" layoutY="427.0" mnemonicParsing="false" onAction="#nuevoRegistro" text="Nuevo" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
