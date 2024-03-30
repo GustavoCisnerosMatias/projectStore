@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="dataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLVerClientesController">
+   <children>
+      <Pane prefHeight="494.0" prefWidth="643.0">
+         <children>
+            <TableView fx:id="tv_datos" layoutX="23.0" onMouseClicked="#ir_editarClientes" prefHeight="454.0" prefWidth="597.0">
+              <columns>
+                <TableColumn fx:id="id_clientes" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="cedula_cliente" prefWidth="93.0" text="Cedula" />
+                  <TableColumn fx:id="nombre_Cliente" prefWidth="88.0" text="Nombres" />
+                  <TableColumn fx:id="apellidos_Cliente" prefWidth="117.0" text="Apellidos" />
+                  <TableColumn fx:id="direccion_Cliente" prefWidth="76.0" text="Direccion" />
+                  <TableColumn fx:id="telefono_cliente" prefWidth="71.0" text="Telefono" />
+                  <TableColumn fx:id="estado_cliente" prefWidth="77.0" text="Estado" />
+              </columns>
+            </TableView>
+            <Button fx:id="btn_nuevo" layoutX="303.0" layoutY="461.0" mnemonicParsing="false" onAction="#nuevoRegistro" text="Nuevo" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

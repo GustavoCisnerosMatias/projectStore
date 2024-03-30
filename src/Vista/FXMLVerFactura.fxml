@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="dataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLVerFacturaController">
+   <children>
+      <Pane prefHeight="498.0" prefWidth="643.0">
+         <children>
+            <TableView fx:id="tv_datos" layoutX="17.0" layoutY="99.0" prefHeight="231.0" prefWidth="630.0">
+               <columns>
+                  <TableColumn fx:id="producto_id" prefWidth="103.0" text="ID" />
+                  <TableColumn fx:id="producto_codigo" prefWidth="92.0" text="Codigo" />
+                  <TableColumn fx:id="producto_nombre" prefWidth="167.0" text="Nombre" />
+                  <TableColumn fx:id="producto_precio" prefWidth="99.0" text="Precio" />
+                  <TableColumn fx:id="producto_stock" text="Cantidad" />
+                  <TableColumn fx:id="producto_estado" prefWidth="87.0" text="Subtotal" />
+               </columns>
+            </TableView>
+            <Button fx:id="btn_regreso" layoutX="304.0" layoutY="450.0" mnemonicParsing="false" onAction="#regresarTotalFacturas" text="Regresar" />
+            <Label layoutX="38.0" layoutY="27.0" text="Id Factura:" />
+            <TextField fx:id="idFactura" editable="false" layoutX="111.0" layoutY="23.0" />
+            <Label layoutX="433.0" layoutY="416.0" text="Total:" />
+            <TextField fx:id="Total" editable="false" layoutX="478.0" layoutY="412.0" />
+            <Label layoutX="413.0" layoutY="385.0" text="Total_Iva:" />
+            <TextField fx:id="totalVA" editable="false" layoutX="478.0" layoutY="381.0" />
+            <Label layoutX="410.0" layoutY="350.0" text="Sub_Total:" />
+            <TextField fx:id="subTotal" editable="false" layoutX="478.0" layoutY="346.0" />
+            <Label layoutX="38.0" layoutY="60.0" text="Fecha:" />
+            <TextField fx:id="fecha" editable="false" layoutX="111.0" layoutY="56.0" />
+            <Label layoutX="413.0" layoutY="27.0" text="Nombre:" />
+            <TextField fx:id="nombre" editable="false" layoutX="486.0" layoutY="23.0" />
+            <Label layoutX="413.0" layoutY="60.0" text="Apellidos:" />
+            <TextField fx:id="apellido" editable="false" layoutX="486.0" layoutY="56.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
